@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c2c2c2;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: 360px -320px;
+    background-size: 750px;
+}
+
+.Introductory_Container {
+    height: 350px;
+    width: 500px;
+    background-color: white;
+    position: fixed;
+    margin-left: 450px;
+    margin-top: 200px;
+    opacity: 10%;
+}
