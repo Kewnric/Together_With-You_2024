@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Greatest Love</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #c2c2c2;
+            background-image: url(background.png);
+            background-repeat: no-repeat;
+            background-position: 360px -320px;
+            background-size: 750px;
+            font-family: 'Arial', sans-serif;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        .envelope:hover {
+            transform: scale(1.1);
+        }
+        .flap {
+            width: 100%;
+            height: 50%;
+            background-color: wheat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top;
+            transition: transform 0.5s;
+        }
+        .message {
+            display: none;
+            position: absolute;
+            top: 50%;
+            width: 500px;
+            height: 1050px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .envelope.open .flap {
+            transform: rotateX(180deg);
+        }
+        .envelope.open .message {
+            display: block;
+        }
+        .letter-seal{
+            height: 105px;
+            margin-left: 80px;
+            z-index: 99;
+            position: fixed;
+        }
+        #img_1 {
+            position: fixed;
+            margin-right: 700px;
+            height: 80px;
+        }
+        #img_2 {
+            position: fixed;
+            margin-right: -700px;
+            height: 140px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="this.classList.toggle('open')">
+        
+        <div class="flap">
+            <img class="letter-seal" src="ani_3.gif" alt="">
+        </div>
+        <div class="message">
+            <h2>For greatest love <br> My baby, Shan</h2>
+            <p>Hi baby. I know it is kinda unbearable and confusing why I'm still making you this letter,
+                 I'm sorry if I'm still hard headed as ever, but even if I know you're gone and far away from me,
+                  I still hope that you'll read this letter but nevertheless, I just want you to know. I'm sooo happy for having you, and since I started this year together with you,
+                   I still wanna spend the last moments and remaining time of this year still with you. 
+                   
+                   <br> <br>Before this year ends,
+                    I wanna say everything I wanted say to you, a sincere and heartful message to my greatest love who had been with me throughout all the things
+                     and memories that we shared this year, with your love, your sweetness, your support, and your dedication in respecting our relationship to its fullest. 
+                     
+                     </p>
+            <p>Thank you, Thank you, Thank you <br> Thank you so much for being who you are, you're the greatest girlfriend I could ever hoped for, and the for being my sole comfort throughout the year. Your kisses that never failed to melt my heart, your smile that made my day, the way we hold hands when sitting together, the hugs we made whenever things have been too much for us, the thigh thingy we usually do, the letters we have exchanged with each other, the conversations that never seemed to end, your angelic singing voice and the guitar covers I made for you, the valentine gifts, the jerseys we exchanged with each other, the babies we took care of, the short stroll around the campus, the flower ring we made for each other, the promises we made along the way, the memorable dates and places we've been to together, but most importantly, us being a couple.</p>
+            <p>I wish that I could go back to the past and revisit our memories and happy times together.</p>
+            <p>I'm sorry if I haven't been the best, I'm sorry if I made you cry, or hurt your feelings countless of times, the heartbreaks you felt. I sincerely apologize for the amount of pain I have caused you. I love you, I really love you my baby and I just want you to know that I care for you.</p>
+            <p>I hope that whenever you're feeling alone, anxious, scared, or depressed. Just know that I'll be there, even without my presence, my heart and soul will always be there for you no matter what happens. I'll never stop loving you, or stop caring about you. You are important in my life and always will be.</p>
+            <p>I still wish for us to be together again, continue having a future with you, spending time with you. But I really do hope you'd find yourself back to me again because I really feel empty without you.</p>
+            <p>Even so, I'll support every decisions you make, good luck shan, I wish you a happy new year!!</p>
+            <p>Forever yours,</p>
+            <p>Your Ken ♡</p>
+        </div>
+    </div>
+    <img src="ani_16.gif" alt="" id="img_1">
+    <img src="ani_8.gif" alt="" id="img_2">
+</body>
+</html>
